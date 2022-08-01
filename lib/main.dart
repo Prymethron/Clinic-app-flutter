@@ -17,16 +17,22 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Clinic App',
       theme: ThemeData(
+        scaffoldBackgroundColor: const Color.fromARGB(255, 244, 238, 255),
         textTheme: const TextTheme(
             headline5: TextStyle(color: ProjectColors.textColor1),
-            headline6: TextStyle(color: ProjectColors.textColor2)),
+            headline6: TextStyle(color: ProjectColors.textColor1)),
         splashColor: Colors.transparent,
         highlightColor: Colors.transparent,
         bottomNavigationBarTheme: const BottomNavigationBarThemeData(
             unselectedItemColor: ProjectColors.color2,
             selectedItemColor: ProjectColors.color1),
         appBarTheme: const AppBarTheme(
-            color: Colors.transparent, centerTitle: true, elevation: 0),
+            shape: RoundedRectangleBorder(
+                borderRadius:
+                    BorderRadius.vertical(bottom: Radius.circular(20))),
+            color: Colors.transparent,
+            centerTitle: true,
+            elevation: 0),
         primarySwatch: Colors.grey,
       ),
       home: const HomeView(),

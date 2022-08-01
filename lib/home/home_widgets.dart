@@ -36,8 +36,8 @@ IconButton _bottomBarIconButton(int index, IconData icon, IconData iconfilled,
     enableFeedback: false,
     onPressed: () {
       homeController.pageIndex.value = index;
-      pageController.animateToPage(index,
-          duration: const Duration(milliseconds: 500), curve: Curves.ease);
+      // pageController.animateToPage(index,
+      //     duration: const Duration(milliseconds: 500), curve: Curves.ease);
     },
     icon: homeController.pageIndex.value == index
         ? Icon(

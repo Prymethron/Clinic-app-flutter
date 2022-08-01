@@ -2,7 +2,9 @@
     {
         "id": "1",
         "name": "Furkan",
-        "description": "Furkan",
+        "gender": "Male",
+        "department": "Hearth Surgeon",
+        "description": "Description",
         "education": "Tıp Fakültesi; Dicle Üniversitesi",
         "photo": "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000"
     }
