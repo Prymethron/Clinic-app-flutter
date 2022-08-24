@@ -1,3 +1,4 @@
+import 'package:clinic_app/core/flavor/app_config.dart';
 import 'package:clinic_app/departments/departments_view.dart';
 import 'package:clinic_app/doctors/doctors_view.dart';
 import 'package:clinic_app/gallery/gallery_view.dart';
@@ -26,7 +27,12 @@ class _HomeViewState extends State<HomeView> {
     const GalleryView()
   ];
 
-  List appBarTitles = ['Clinic', 'Doctors', '', 'Gallery'];
+  late List appBarTitles = [
+    (AppConfig.of(context).appDisplayName),
+    'Doctors',
+    '',
+    'Gallery'
+  ];
 
   @override
   Widget build(BuildContext context) {

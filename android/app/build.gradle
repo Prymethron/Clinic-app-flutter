@@ -53,6 +53,22 @@ android {
         versionName flutterVersionName
     }
 
+    flavorDimensions "app"
+    productFlavors{
+        alfa_clinic{
+            dimension "app"
+            applicationId "com.example.alfaclinic"
+            versionCode flutterVersionCode.toInteger()
+            versionName flutterVersionName
+        }
+        random_clinic{
+            dimension "app"
+            applicationId "com.example.randomclinic"
+            versionCode flutterVersionCode.toInteger()
+            versionName flutterVersionName
+        }
+    }
+
     buildTypes {
         release {
             // TODO: Add your own signing config for the release build.
